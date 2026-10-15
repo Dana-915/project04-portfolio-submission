@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dana Marouf | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#skills" data-i18n="navSkills">Skills</a>
+            <a href="#projects" data-i18n="navProjects">Projects</a>
+            <a href="#hobbies" data-i18n="navHobbies">Hobbies</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+
+            <div class="language-controls">
+                <button type="button" id="english-button">English</button>
+                <button type="button" id="arabic-button">العربية</button>
+            </div>
+
+            <button type="button" id="theme-toggle">Switch to Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1 data-i18n="name">Dana Rababah</h1>
+
+            <img
+                id="profile-photo"
+                src="assets/IMG_8052.jpeg"
+                alt="Dana Rababah's profile photo"
+                width="200"
+            >
+
+            <div id="photo-controls">
+                <button type="button" id="previous-photo" aria-label="Previous photo">
+                    &#8592;
+                </button>
+
+                <div id="photo-indicators">
+                    <span class="photo-indicator active" id="photo-indicator-1">1</span>
+                    <span class="photo-indicator" id="photo-indicator-2">2</span>
+                </div>
+
+                <button type="button" id="next-photo" aria-label="Next photo">
+                    &#8594;
+                </button>
+            </div>
+
+            <p data-i18n="aboutText">
+                I am a Software Engineering graduate from Jordan University
+                of Science and Technology. I am interested in software
+                development, web technologies, database management, and
+                problem-solving. I enjoy learning new technologies and
+                applying my knowledge through practical projects.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2 data-i18n="skillsTitle">My Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Java</div>
+                <div class="skill" data-i18n="skillDatabase">Database Management</div>
+                <div class="skill" data-i18n="skillTesting">Software Testing</div>
+                <div class="skill" data-i18n="skillMobile">Mobile App Development</div>
+                <div class="skill" data-i18n="skillUIUX">UI/UX Principles</div>
+                <div class="skill">Flutter</div>
+                <div class="skill" data-i18n="skillGit">Git and GitHub</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 data-i18n="projectsTitle">My Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 00</h3>
+                    <p data-i18n="project00">
+                        Introduction to web development and website structure using HTML.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project 01</h3>
+                    <p data-i18n="project01">
+                        HTML exercises focused on creating and organizing web pages.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project 02</h3>
+                    <p data-i18n="project02">
+                        CSS layouts, Flexbox, positioning, shapes, colors, animations, and transitions.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project 03</h3>
+                    <p data-i18n="project03">
+                        JavaScript variables, functions, conditions, and DOM manipulation.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 data-i18n="busProjectTitle">University Bus Application</h3>
+                    <p data-i18n="busProject">
+                        My Software Engineering graduation project, developed using Flutter.
+                        The application includes university bus location tracking,
+                        arrival notifications, working-hours logging, and student feedback.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2 data-i18n="hobbiesTitle">My Hobbies</h2>
+            <ul>
+                <li data-i18n="hobbyShooting">Target Shooting</li>
+                <li data-i18n="hobbySwimming">Swimming</li>
+                <li data-i18n="hobbyBowling">Bowling</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 data-i18n="contactTitle">Contact Me</h2>
+
+            <form id="contact-form">
+                <label for="name-input" data-i18n="nameLabel">Name:</label>
+                <input type="text" id="name-input" name="name" required>
+
+                <label for="email" data-i18n="emailLabel">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message" data-i18n="messageLabel">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" data-i18n="sendMessage">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footerText">
+            &copy; 2026 Dana Rababah. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
